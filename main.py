@@ -1,6 +1,8 @@
-dias_alugados = int(input('Por quantos dias o carro foi alugado?'))
-km_percorridos = int(input('Quantos Kilometros foram percorridos?'))
+frase = input('Digite uma frase : ')
+recorte = len(frase) // 2
 
-calc = (dias_alugados * 60) + (km_percorridos * 0.15)
+frase2 = frase[:recorte]
 
-print('O valor correspondente aos dias alugados e km percorridos é R${}' .format(calc))
+print('A frase recortada fica : {}' .format(frase2))
+print('Os ultimos caracteres são : {}' .format(frase2[-2:]))
+
