@@ -1,19 +1,6 @@
-number1 = int(input('Primeiro dado : '))
-number2 = int(input('Segundo Dado : '))
+dias_alugados = int(input('Por quantos dias o carro foi alugado?'))
+km_percorridos = int(input('Quantos Kilometros foram percorridos?'))
 
-equacao = input('Qual a operação : ')
+calc = (dias_alugados * 60) + (km_percorridos * 0.15)
 
-if equacao == 'Soma' :
-    soma = number1 + number2
-    print('A soma dos dados é {}' .format(soma))
-elif equacao == 'Subtração' :
-    sub = number1 - number2
-    print('A subtração dos dados é {}' .format(sub))
-elif equacao == 'Multiplicação' :
-    mult = number1 * number2
-    print('A multiplicação dos dados é {}' .format(mult))
-elif equacao == 'Divisão' :
-    div = number1 / number2
-    print('A divisão dos dados é {}' .format(div))
-else :
-    print('Não conseguimos entender o tipo da operação')
+print('O valor correspondente aos dias alugados e km percorridos é R${}' .format(calc))
