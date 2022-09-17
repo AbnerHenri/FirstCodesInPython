@@ -1,31 +1,10 @@
-print('R - Residências')
-print('C - Comércio')
-print('I - Indústria')
+soma = 0
+cont = 1
 
-instalation_type = input('Qual é o seu tipo de instalação? : ')
-kWh = int(input('Qual a quantidade do kWh? : '))
+while cont <= 5:
+    nota = float(input('Digite a nota {}º : ' .format(cont)))
+    soma += nota
+    cont += 1
 
-if(instalation_type == 'R'):
-    if(kWh <= 500):
-        calc = kWh * 0.40
-        print('O valor da sua conta é {:.2f}' .format(calc))
-    else:
-        calc = kWh * 0.65
-        print('O valor da sua conta é {:.2f}'.format(calc))
-elif(instalation_type == 'C'):
-    if(kWh <= 100):
-        calc = kWh * 0.55
-        print('O valor da sua conta é {:.2f}'.format(calc))
-    else:
-        calc = kWh * 0.60
-        print('O valor da sua conta é {:.2f}'.format(calc))
-elif(instalation_type == 'I'):
-    if(kWh <= 5000):
-        calc = kWh * 0.55
-        print('O valor da sua conta é {:.2f}'.format(calc))
-    else:
-        calc = kWh * 0.60
-        print('O valor da sua conta é {:.2f}'.format(calc))
-else:
-    print('O tipo de instalação é inválido')
-
+media = soma / 5
+print('O valor total da média foi : {}' .format(media))
