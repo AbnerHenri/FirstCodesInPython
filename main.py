@@ -1,11 +1,11 @@
 
-number = 3
+number = 0
 
-while number <= 12 :
+while number < 9 :
     print(number)
-    number += 1
+    number += 2
 
-print('-' * 10)
+print('-' * 20)
 
-for i in range(1,13,1):
+for i in range(0,9,2):
     print(i)
