@@ -1,10 +1,11 @@
-soma = 0
-cont = 1
 
-while cont <= 5:
-    nota = float(input('Digite a nota {}º : ' .format(cont)))
-    soma += nota
-    cont += 1
+number = 3
 
-media = soma / 5
-print('O valor total da média foi : {}' .format(media))
+while number <= 12 :
+    print(number)
+    number += 1
+
+print('-' * 10)
+
+for i in range(1,13,1):
+    print(i)
