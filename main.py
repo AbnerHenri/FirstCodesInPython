@@ -1,6 +1,10 @@
-number = 5
+def border(nome):
+    print('+----------+')
+    print('   ' + nome)
+    print('+----------+')
 
-def calc(number1, number2):
-    print(number1 + number2)
 
-calc(number, 25)
+border('Abner')
+border('Joao')
+border('Haik')
+border('Adilson')
