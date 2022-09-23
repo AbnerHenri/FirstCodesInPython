@@ -1,15 +1,36 @@
 
-def FatorialNumber(num):
-    """
-    A função recebe um número inteiro, após isso
-    a função multiplica o número por todos os seu antecessores
-    até 1
-    """
-    for i in range(1, num, 1):
-        num *= i
-    print(num)
+games = []
 
-number = int(input('Digite um número para ver o seu fatorial : '))
-FatorialNumber(number)
 
-help(FatorialNumber)
+def Add(game=str, console=str):
+    global games
+
+    data = game + ' : ' + console
+    games.append(data)
+
+def List():
+    global games
+
+    for i in games:
+        print('-> {}' .format(i))
+
+def Alg():
+
+    name = ''
+    console = ''
+
+    while name != 'Listar' or console != 'Listar':
+        name = str(input('Digite o nome de um game : '))
+        if name == 'Listar': break
+
+        console = str(input('Digite o nome de um console : '))
+        if console == 'Listar': break
+
+        Add(name, console)
+
+    List()
+
+
+
+Alg()
+
